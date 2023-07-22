@@ -8,7 +8,6 @@ use Inertia\Response;
 
 class CaptchaController extends Controller {
     public function verify(Request $request) {
-        //dd($request['captcha']);
         $request->validate([
             'captcha' => ['required', 'captcha'],
         ]);
