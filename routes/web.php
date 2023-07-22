@@ -20,7 +20,6 @@ use App\Http\Controllers\CaptchaController;
 Route::get('/captchaform', [CaptchaController::class, 'display'])->name('captcha.display');
 Route::post('/captchaform', [CaptchaController::class, 'verify'])->name('captcha.verify');
 
-
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
