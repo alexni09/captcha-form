@@ -17,8 +17,8 @@ use App\Http\Controllers\CaptchaController;
 |
 */
 
-Route::get('/captchaform', [CaptchaController::class, 'display'])->name('captcha.display');
-Route::post('/captchaform', [CaptchaController::class, 'verify'])->name('captcha.verify');
+Route::get('/captcha-form', [CaptchaController::class, 'display'])->name('captcha.display');
+Route::post('/captcha-form', [CaptchaController::class, 'verify'])->name('captcha.verify');
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
