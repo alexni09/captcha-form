@@ -23,10 +23,16 @@ Copy the files which are needed:
 - /resources/js/Pages/CaptchaForm.vue
 
 Add these lines to /routes/web.php:
+
 use App\Http\Controllers\CaptchaController;
+
 Route::get('/captchaform', [CaptchaController::class, 'display'])->name('captcha.display');
+
 Route::post('/captchaform', [CaptchaController::class, 'verify'])->name('captcha.verify');
 
+
 Add these lines to /routes/api.php:
+
 use App\Http\Controllers\Api\CaptchaReloadController;
+
 Route::get('captchareload', [CaptchaReloadController::class, 'show'])->name('captcha.reload');
