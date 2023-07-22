@@ -26,7 +26,7 @@ watch(errorCaptcha, () => { captchaReload() })
         <form class="flex flex-col w-96" @submit.prevent="submit">
             <div class="mt-2 flex flex-row place-items-center py-3">
                 <img v-if="htmlImgSrc !== null" :src="htmlImgSrc">
-                <div v-else class="w-56 h-9 border-2 border-slate-300 rounded-sm">
+                <div v-else class="animate-pulse w-56 h-9 border-2 border-slate-300 rounded-sm">
                     <div class="px-2 grid grid-cols-6 gap-2 h-full w-full items-center">
                         <div class="h-2 bg-slate-200 rounded-md col-span-3" />
                         <div class="h-2 bg-slate-200 rounded-md col-span-1" />
