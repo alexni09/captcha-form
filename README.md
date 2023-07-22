@@ -9,11 +9,13 @@ Usage: http://localhost:8000/captchaform
 ## Installation
 
 This uses mewebstudio/captcha. So, install it via Composer:
+
 composer require mews/captcha
 
 And update the config/app.php file according to the instructions there.
 
 Publish config:
+
 php artisan vendor:publish
 
 Copy the files which are needed:
