@@ -18,7 +18,7 @@ Publish config:
 
 php artisan vendor:publish
 
-Copy the files which are needed:
+Copy the relevant files:
 - /config/captcha.php
 - /app/Http/Controllers/CaptchaController.php
 - /app/Http/Controllers/Api/CaptchaReloadController.php
@@ -26,11 +26,9 @@ Copy the files which are needed:
 
 Add these lines to /routes/web.php:
 
-use App\Http\Controllers\CaptchaController;
-
-Route::get('/captchaform', [CaptchaController::class, 'display'])->name('captcha.display');
-
-Route::post('/captchaform', [CaptchaController::class, 'verify'])->name('captcha.verify');
+```use App\Http\Controllers\CaptchaController;```
+```Route::get('/captchaform', [CaptchaController::class, 'display'])->name('captcha.display');```
+```Route::post('/captchaform', [CaptchaController::class, 'verify'])->name('captcha.verify');```
 
 
 Add these lines to /routes/api.php:
