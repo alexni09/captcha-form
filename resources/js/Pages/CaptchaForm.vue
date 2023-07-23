@@ -9,7 +9,7 @@ const form = useForm({
 const captchaReload = async () => {
     htmlImgSrc.value = null
     form.captcha = ''
-    await axios.get('/api/captcha-reload').then(response => { htmlImgSrc.value = response.data.url }).catch(error => { console.log(error) })
+    await axios.get(route('captcha.reload')).then(response => { htmlImgSrc.value = response.data.url }).catch(error => { console.log(error) })
 }
 const submit = () => {
     form.post(route('captcha.verify'))
