@@ -12,7 +12,7 @@ This uses mewebstudio/captcha. So, install it via Composer:
 
 composer require mews/captcha
 
-And update the config/app.php file according to the instructions there.
+And update the [config/app.php](/config/app.php) file according to the instructions there.
 
 Publish config:
 
