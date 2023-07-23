@@ -35,7 +35,7 @@ watch(errorCaptcha, () => { captchaReload() })
                 </div>
                 <button class="ml-4 py-2 px-4 text-xl font-semibold w-fit border-2 border-gray-700 rounded-md cursor-pointer" @click.prevent="captchaReload">&#8635;</button>
             </div>
-            <input type="text" @keydown.enter.prevent="" @keydown.space.prevent="" v-model="form.captcha">
+            <input type="text" maxlength="6" @keydown.enter.prevent="" @keydown.space.prevent="" v-model="form.captcha">
             <InputError class="mt-3" :message="errorCaptcha" />
             <button class="mt-3 py-1 px-4 w-fit border-2 border-gray-700 rounded-md cursor-pointer" type="submit">Submit</button>
         </form>
