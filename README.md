@@ -10,19 +10,19 @@ Usage: http://localhost:8000/captchaform
 
 This uses mewebstudio/captcha. So, install it via Composer:
 
-composer require mews/captcha
+$ composer require mews/captcha
 
 And update the [config/app.php](/config/app.php) file according to the instructions there.
 
 Publish config:
 
-php artisan vendor:publish
+$ php artisan vendor:publish
 
 Copy the relevant files:
-- /config/captcha.php
-- /app/Http/Controllers/CaptchaController.php
-- /app/Http/Controllers/Api/CaptchaReloadController.php
-- /resources/js/Pages/CaptchaForm.vue
+- [config/captcha.php](/config/captcha.php)
+- [app/Http/Controllers/CaptchaController.php](/app/Http/Controllers/CaptchaController.php)
+- [app/Http/Controllers/Api/CaptchaReloadController.php](/app/Http/Controllers/Api/CaptchaReloadController.php)
+- [resources/js/Pages/CaptchaForm.vue](/resources/js/Pages/CaptchaForm.vue)
 
 Add these lines to /routes/web.php:
 
