@@ -8,7 +8,7 @@ Usage: http://localhost:8000/captchaform
 
 ## Installation
 
-This uses mewebstudio/captcha. So, install it via Composer:
+This uses [mewebstudio/captcha](https://github.com/mewebstudio/captcha). So, install it via Composer:
 
 $ composer require mews/captcha
 
